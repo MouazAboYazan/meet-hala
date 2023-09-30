@@ -1,0 +1,172 @@
+/* FONTS-IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+
+/* GENERAL */
+*{
+    padding: 0; margin: 0;
+    left: 0; top: 0;
+    box-sizing: border-box;
+    text-decoration: none; list-style: none;
+}
+
+
+
+/* COMMON */
+:root{
+    --main-BG-white-color: #ffffff;
+    --seconde-BG-gray-color: #f4f4f4;
+    --main-BT-TXT-IC-red-color: #c61728;
+    --main-BT-TXT-IC-blue-color: #0054a6;
+    --main-URL-TXT-black-color: #262250;
+    --main-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --cards-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    --main-TXT-font: "Poppins", sans-serif;
+
+}
+
+.active{
+    color: var(--main-BT-TXT-IC-red-color) !important; 
+    border-bottom: 2px solid var(--main-BT-TXT-IC-red-color) !important;
+}
+
+.logo{
+    max-width: 80px;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+section{
+    padding: 100px 0;
+}
+
+.nav-link{
+    transition: 0.5s;
+}
+
+.nav-link:hover
+{
+    color: var(--main-BT-TXT-IC-red-color) !important;
+    transition:  0.5s all;
+}
+
+
+body{
+    background-color: var(--seconde-BG-gray-color) !important ;
+}
+
+.center{    
+    margin: 80px;
+        display: inline-block;
+        padding: 5px 10px; /* Adjust padding as needed */
+        border-bottom: 2px solid var(--main-BT-TXT-IC-blue-color); /* Border width and color */
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: var(--main-BT-TXT-IC-red-color) !important;
+    }
+
+    .center:hover{
+        border-bottom: 2px solid var(--main-BT-TXT-IC-blue-color); /* Border width and color */
+        color: var(--main-BT-TXT-IC-red-color);
+    }
+
+
+.hero {
+    background-image: url('https://images.pexels.com/photos/2978019/pexels-photo-2978019.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: left top;
+    color: #fff;
+    text-align: center;
+    padding: 300px 0; /* Adjust padding as needed */
+    position: relative;
+    /* margin: 40px 0 0 0; */
+}
+
+/* Overlay to create a dark background */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Text styles */
+.hero-text {
+    z-index: 1;
+    position: relative;
+    letter-spacing: 3px;
+}
+
+/* Button styles */
+.btn-hero {
+    z-index: 1;
+    margin-top: 20px; /* Adjust spacing as needed */
+    outline: none !important;
+    border: none !important;
+}
+
+.btn-hero:hover{
+    background-color: var(--main-BT-TXT-IC-red-color) !important;
+    outline: none !important;
+    border: none !important;
+
+}
+
+.services{
+    background-color: var(--seconde-BG-gray-color);
+    text-align: center;
+
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        background-position: calc(50% + 50px) center; /* Shift background image to the right on mobile */
+        padding: 60% 0;
+    }
+    .service-card{
+        margin: 20px 0;
+    }
+}
+
+
+
+
+        /* Custom styles for the services section */
+        .services {
+            padding: 40px 0; /* Adjust spacing as needed */
+        }
+        .service-card {
+            border: none;
+            text-align: center;
+            background-color: var(--main-BG-white-color); /* Background color for cards */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Card shadow */
+            transition: transform 0.3s; /* Add a smooth hover effect */
+        }
+        .service-card:hover {
+            transform: translateY(-5px); /* Lift the card on hover */
+        }
+        .service-img {
+            max-height: 200px; /* Max height for the images */
+        }
+        .service-title {
+            font-size: 24px; /* Heading font size */
+            margin-top: 20px; /* Adjust spacing between title and text */
+            color: var(--main-BT-TXT-IC-red-color) !important;
+
+        }
+        .service-text {
+            font-size: 16px; /* Text font size */
+            margin-bottom: 20px; /* Adjust spacing between text and card */
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--main-BT-TXT-IC-blue-color);
+        }
